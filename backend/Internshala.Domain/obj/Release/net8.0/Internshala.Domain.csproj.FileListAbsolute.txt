@@ -1,0 +1,11 @@
+G:\Intershala-clone\backend\Internshala.Domain\bin\Release\net8.0\Internshala.Domain.deps.json
+G:\Intershala-clone\backend\Internshala.Domain\bin\Release\net8.0\Internshala.Domain.dll
+G:\Intershala-clone\backend\Internshala.Domain\bin\Release\net8.0\Internshala.Domain.pdb
+G:\Intershala-clone\backend\Internshala.Domain\obj\Release\net8.0\Internshala.Domain.GeneratedMSBuildEditorConfig.editorconfig
+G:\Intershala-clone\backend\Internshala.Domain\obj\Release\net8.0\Internshala.Domain.AssemblyInfoInputs.cache
+G:\Intershala-clone\backend\Internshala.Domain\obj\Release\net8.0\Internshala.Domain.AssemblyInfo.cs
+G:\Intershala-clone\backend\Internshala.Domain\obj\Release\net8.0\Internshala.Domain.csproj.CoreCompileInputs.cache
+G:\Intershala-clone\backend\Internshala.Domain\obj\Release\net8.0\Internshala.Domain.dll
+G:\Intershala-clone\backend\Internshala.Domain\obj\Release\net8.0\refint\Internshala.Domain.dll
+G:\Intershala-clone\backend\Internshala.Domain\obj\Release\net8.0\Internshala.Domain.pdb
+G:\Intershala-clone\backend\Internshala.Domain\obj\Release\net8.0\ref\Internshala.Domain.dll

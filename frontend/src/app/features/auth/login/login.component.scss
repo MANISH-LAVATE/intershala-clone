@@ -1,0 +1,86 @@
+@use '../../../../styles/variables' as v;
+
+.login {
+  &__header {
+    margin-bottom: v.$space-8;
+
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: v.$color-on-surface;
+      margin-bottom: v.$space-2;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: v.$space-2;
+
+    mat-form-field {
+      width: 100%;
+    }
+  }
+
+  &__options {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -(v.$space-1);
+  }
+
+  &__forgot {
+    font-size: 0.875rem;
+    color: v.$color-primary-600;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__error {
+    display: flex;
+    align-items: center;
+    gap: v.$space-2;
+    padding: v.$space-3 v.$space-4;
+    background: v.$color-status-closed-bg;
+    color: v.$color-status-closed-fg;
+    border-radius: v.$border-radius-md;
+    font-size: 0.875rem;
+
+    mat-icon {
+      font-size: 18px;
+      height: 18px;
+      width: 18px;
+    }
+  }
+
+  &__submit {
+    height: 48px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: v.$border-radius-full !important;
+    margin-top: v.$space-2;
+
+    mat-spinner {
+      display: inline-block;
+    }
+  }
+
+  &__register {
+    text-align: center;
+    margin-top: v.$space-6;
+    font-size: 0.9375rem;
+    color: v.$color-on-surface-muted;
+
+    a {
+      color: v.$color-primary-600;
+      font-weight: 600;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

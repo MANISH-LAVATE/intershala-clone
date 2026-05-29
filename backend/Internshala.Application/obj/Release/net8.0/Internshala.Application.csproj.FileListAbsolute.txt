@@ -1,0 +1,17 @@
+G:\Intershala-clone\backend\Internshala.Application\bin\Release\net8.0\Internshala.Application.deps.json
+G:\Intershala-clone\backend\Internshala.Application\bin\Release\net8.0\Internshala.Application.dll
+G:\Intershala-clone\backend\Internshala.Application\bin\Release\net8.0\Internshala.Application.pdb
+G:\Intershala-clone\backend\Internshala.Application\bin\Release\net8.0\Internshala.Domain.dll
+G:\Intershala-clone\backend\Internshala.Application\bin\Release\net8.0\Internshala.Shared.dll
+G:\Intershala-clone\backend\Internshala.Application\bin\Release\net8.0\Internshala.Domain.pdb
+G:\Intershala-clone\backend\Internshala.Application\bin\Release\net8.0\Internshala.Shared.pdb
+G:\Intershala-clone\backend\Internshala.Application\obj\Release\net8.0\Internshala.Application.csproj.AssemblyReference.cache
+G:\Intershala-clone\backend\Internshala.Application\obj\Release\net8.0\Internshala.Application.GeneratedMSBuildEditorConfig.editorconfig
+G:\Intershala-clone\backend\Internshala.Application\obj\Release\net8.0\Internshala.Application.AssemblyInfoInputs.cache
+G:\Intershala-clone\backend\Internshala.Application\obj\Release\net8.0\Internshala.Application.AssemblyInfo.cs
+G:\Intershala-clone\backend\Internshala.Application\obj\Release\net8.0\Internshala.Application.csproj.CoreCompileInputs.cache
+G:\Intershala-clone\backend\Internshala.Application\obj\Release\net8.0\Internsh.A84F0444.Up2Date
+G:\Intershala-clone\backend\Internshala.Application\obj\Release\net8.0\Internshala.Application.dll
+G:\Intershala-clone\backend\Internshala.Application\obj\Release\net8.0\refint\Internshala.Application.dll
+G:\Intershala-clone\backend\Internshala.Application\obj\Release\net8.0\Internshala.Application.pdb
+G:\Intershala-clone\backend\Internshala.Application\obj\Release\net8.0\ref\Internshala.Application.dll

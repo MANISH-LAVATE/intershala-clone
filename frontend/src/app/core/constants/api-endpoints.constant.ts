@@ -1,0 +1,63 @@
+export const API_ENDPOINTS = {
+  AUTH: {
+    REGISTER_STUDENT: '/auth/register/student',
+    REGISTER_EMPLOYER: '/auth/register/employer',
+    LOGIN: '/auth/login',
+    REFRESH: '/auth/refresh',
+    LOGOUT: '/auth/logout',
+    VERIFY_EMAIL: '/auth/verify-email',
+    FORGOT_PASSWORD: '/auth/forgot-password',
+    RESET_PASSWORD: '/auth/reset-password',
+    ME: '/auth/me',
+  },
+  INTERNSHIPS: {
+    BASE: '/internships',
+    BY_ID: (id: number) => `/internships/${id}`,
+    APPLY: (id: number) => `/internships/${id}/apply`,
+    APPLICATIONS: (id: number) => `/internships/${id}/applications`,
+  },
+  JOBS: {
+    BASE: '/jobs',
+    BY_ID: (id: number) => `/jobs/${id}`,
+    APPLY: (id: number) => `/jobs/${id}/apply`,
+  },
+  APPLICATIONS: {
+    BASE: '/applications',
+    MY: '/applications/my',
+    BY_ID: (id: number) => `/applications/${id}`,
+    STATUS: (id: number) => `/applications/${id}/status`,
+    WITHDRAW: (id: number) => `/applications/${id}/withdraw`,
+  },
+  PROFILE: {
+    STUDENT: '/profile/student',
+    EMPLOYER: '/profile/employer',
+    EDUCATION: '/profile/education',
+    EDUCATION_BY_ID: (id: number) => `/profile/education/${id}`,
+    EXPERIENCE: '/profile/experience',
+    EXPERIENCE_BY_ID: (id: number) => `/profile/experience/${id}`,
+    SKILLS: '/profile/skills',
+  },
+  COURSES: {
+    BASE: '/courses',
+    BY_ID: (id: number) => `/courses/${id}`,
+    ENROLL: (id: number) => `/courses/${id}/enroll`,
+    MY: '/courses/my',
+  },
+  NOTIFICATIONS: {
+    BASE: '/notifications',
+    MARK_READ: (id: number) => `/notifications/${id}/read`,
+    MARK_ALL_READ: '/notifications/read-all',
+  },
+  SEARCH: {
+    BASE: '/search',
+  },
+  ADMIN: {
+    USERS: '/admin/users',
+    USER_BY_ID: (id: number) => `/admin/users/${id}`,
+    INTERNSHIPS: '/admin/internships',
+    ANALYTICS: '/admin/analytics',
+  },
+  CATEGORIES: '/categories',
+  LOCATIONS: '/locations',
+  SKILLS: '/skills',
+} as const;

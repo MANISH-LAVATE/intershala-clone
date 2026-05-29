@@ -1,0 +1,18 @@
+@use '../../../styles/variables' as v;
+
+.sidebar {
+  height: 100%;
+  overflow-y: auto;
+  padding: v.$space-4 0;
+
+  .mat-mdc-list-item.active {
+    background-color: v.$color-primary-50;
+    color: v.$color-primary-700;
+    font-weight: 600;
+    border-right: 3px solid v.$color-primary-600;
+
+    .mat-icon {
+      color: v.$color-primary-600;
+    }
+  }
+}

@@ -1,0 +1,87 @@
+// Global styles — Internshala Clone
+// Material Design theme is loaded via prebuilt CSS in angular.json
+@use 'styles/variables' as v;
+@use 'styles/breakpoints' as bp;
+@use 'styles/animations';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: v.$color-background;
+  color: v.$color-on-surface;
+  font-family: v.$font-family-primary;
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: v.$font-family-heading;
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0 0 v.$space-4;
+}
+
+a {
+  color: v.$color-primary-600;
+  text-decoration: none;
+  &:hover { text-decoration: underline; }
+}
+
+.text-muted { color: v.$color-on-surface-muted; }
+.text-primary { color: v.$color-primary-600; }
+.text-success { color: v.$color-accent-600; }
+.text-danger { color: v.$color-error-600; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 v.$space-4;
+
+  @include bp.respond-to('sm') { padding: 0 v.$space-6; }
+  @include bp.respond-to('lg') { max-width: v.$container-max-lg; padding: 0 v.$space-8; }
+  @include bp.respond-to('xl') { max-width: v.$container-max-xl; }
+}
+
+.skeleton-line {
+  background: linear-gradient(
+    90deg,
+    v.$color-neutral-200 25%,
+    v.$color-neutral-100 50%,
+    v.$color-neutral-200 75%
+  );
+  background-size: 200% 100%;
+  border-radius: v.$border-radius-sm;
+  height: 14px;
+  margin-bottom: v.$space-2;
+
+  @media (prefers-reduced-motion: no-preference) {
+    animation: shimmer 1.5s infinite;
+  }
+}
+
+.mat-mdc-dialog-container {
+  border-radius: v.$border-radius-lg !important;
+}
+
+:focus-visible {
+  outline: 2px solid v.$color-primary-500;
+  outline-offset: 2px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}

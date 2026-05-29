@@ -1,0 +1,112 @@
+// ============================================================
+// Design System Variables — Internshala Clone
+// ============================================================
+
+// Font families
+$font-family-primary: 'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+$font-family-heading: 'Inter', 'Poppins', sans-serif;
+$font-family-mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+
+// Brand / Primary palette
+$color-primary-50: #e3f2fd;
+$color-primary-100: #bbdefb;
+$color-primary-200: #90caf9;
+$color-primary-300: #64b5f6;
+$color-primary-400: #42a5f5;
+$color-primary-500: #2196f3;
+$color-primary-600: #1e88e5;
+$color-primary-700: #1976d2;
+$color-primary-800: #1565c0;
+$color-primary-900: #0d47a1;
+
+// Accent / Green
+$color-accent-500: #4caf50;
+$color-accent-600: #43a047;
+$color-accent-700: #388e3c;
+
+// Warning / Amber
+$color-warning-500: #ff9800;
+$color-warning-600: #fb8c00;
+
+// Error / Red
+$color-error-500: #f44336;
+$color-error-600: #e53935;
+
+// Premium / Orange (featured listings)
+$color-premium-500: #ff6b35;
+$color-premium-600: #e55f2e;
+
+// Neutral
+$color-neutral-0: #ffffff;
+$color-neutral-50: #fafafa;
+$color-neutral-100: #f5f5f5;
+$color-neutral-200: #eeeeee;
+$color-neutral-300: #e0e0e0;
+$color-neutral-400: #bdbdbd;
+$color-neutral-500: #9e9e9e;
+$color-neutral-600: #757575;
+$color-neutral-700: #616161;
+$color-neutral-800: #424242;
+$color-neutral-900: #212121;
+
+// Semantic tokens
+$color-background: $color-neutral-50;
+$color-surface: $color-neutral-0;
+$color-surface-variant: $color-neutral-100;
+$color-on-surface: $color-neutral-900;
+$color-on-surface-muted: $color-neutral-600;
+$color-border: $color-neutral-200;
+$color-border-strong: $color-neutral-300;
+
+// Status colors
+$color-status-active-bg: #e8f5e9;
+$color-status-active-fg: #2e7d32;
+$color-status-closed-bg: #fce4ec;
+$color-status-closed-fg: #c62828;
+$color-status-pending-bg: #fff8e1;
+$color-status-pending-fg: #f57f17;
+$color-status-draft-bg: #eeeeee;
+$color-status-draft-fg: #616161;
+
+// Spacing (8px grid)
+$space-0: 0px;
+$space-1: 4px;
+$space-2: 8px;
+$space-3: 12px;
+$space-4: 16px;
+$space-5: 20px;
+$space-6: 24px;
+$space-8: 32px;
+$space-10: 40px;
+$space-12: 48px;
+$space-16: 64px;
+$space-20: 80px;
+$space-24: 96px;
+
+// Border radius
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 12px;
+$border-radius-xl: 16px;
+$border-radius-full: 9999px;
+
+// Shadows
+$shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06);
+$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.06);
+$shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.08), 0 4px 6px rgba(0, 0, 0, 0.05);
+$shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.04);
+
+// Transitions
+$duration-fast: 100ms;
+$duration-normal: 200ms;
+$duration-slow: 300ms;
+$easing-standard: cubic-bezier(0.4, 0, 0.2, 1);
+$easing-enter: cubic-bezier(0, 0, 0.2, 1);
+$easing-exit: cubic-bezier(0.4, 0, 1, 1);
+
+// Layout
+$sidebar-width: 240px;
+$sidebar-collapsed-width: 64px;
+$header-height: 64px;
+$container-max-lg: 1200px;
+$container-max-xl: 1400px;

@@ -1,0 +1,30 @@
+@use '../../../styles/variables' as v;
+
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  &__container {
+    flex: 1;
+    overflow: hidden;
+  }
+
+  &__sidenav {
+    width: v.$sidebar-width;
+    border-right: 1px solid v.$color-border;
+    background: v.$color-surface;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+    main {
+      flex: 1;
+      padding: v.$space-6;
+      overflow-y: auto;
+    }
+  }
+}

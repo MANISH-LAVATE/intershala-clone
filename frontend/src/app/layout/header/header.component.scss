@@ -1,0 +1,66 @@
+@use '../../../styles/variables' as v;
+@use '../../../styles/breakpoints' as bp;
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: v.$header-height;
+  background: v.$color-surface;
+  border-bottom: 1px solid v.$color-border;
+  box-shadow: v.$shadow-sm;
+  padding: 0 v.$space-4;
+  gap: v.$space-2;
+
+  &__menu-btn {
+    @include bp.respond-to('md') {
+      display: none;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  &__logo-text {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: v.$color-primary-600;
+    letter-spacing: -0.5px;
+  }
+
+  &__nav {
+    display: none;
+    gap: v.$space-1;
+
+    @include bp.respond-to('md') {
+      display: flex;
+      align-items: center;
+    }
+
+    a.active {
+      color: v.$color-primary-600;
+      font-weight: 600;
+    }
+  }
+
+  &__spacer {
+    flex: 1;
+  }
+
+  &__profile-info {
+    padding: v.$space-3 v.$space-4;
+    display: flex;
+    flex-direction: column;
+
+    strong {
+      font-size: 0.9375rem;
+    }
+
+    span {
+      font-size: 0.8125rem;
+    }
+  }
+}
