@@ -9,3 +9,4 @@ G:\Intershala-clone\backend\Internshala.Shared\obj\Release\net8.0\Internshala.Sh
 G:\Intershala-clone\backend\Internshala.Shared\obj\Release\net8.0\refint\Internshala.Shared.dll
 G:\Intershala-clone\backend\Internshala.Shared\obj\Release\net8.0\Internshala.Shared.pdb
 G:\Intershala-clone\backend\Internshala.Shared\obj\Release\net8.0\ref\Internshala.Shared.dll
+G:\Intershala-clone\backend\Internshala.Shared\obj\Release\net8.0\Internshala.Shared.sourcelink.json

@@ -20,6 +20,7 @@ try
 
     builder.Services.AddApplication();
     builder.Services.AddInfrastructure(builder.Configuration);
+    builder.Services.AddMemoryCache();
 
     builder.Services.AddControllers();
     builder.Services.AddEndpointsApiExplorer();

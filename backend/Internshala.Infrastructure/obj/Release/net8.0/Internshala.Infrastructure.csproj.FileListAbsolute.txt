@@ -19,3 +19,4 @@ G:\Intershala-clone\backend\Internshala.Infrastructure\obj\Release\net8.0\refint
 G:\Intershala-clone\backend\Internshala.Infrastructure\obj\Release\net8.0\Internshala.Infrastructure.pdb
 G:\Intershala-clone\backend\Internshala.Infrastructure\obj\Release\net8.0\Internshala.Infrastructure.genruntimeconfig.cache
 G:\Intershala-clone\backend\Internshala.Infrastructure\obj\Release\net8.0\ref\Internshala.Infrastructure.dll
+G:\Intershala-clone\backend\Internshala.Infrastructure\obj\Release\net8.0\Internshala.Infrastructure.sourcelink.json

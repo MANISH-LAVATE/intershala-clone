@@ -9,3 +9,4 @@ G:\Intershala-clone\backend\Internshala.Domain\obj\Release\net8.0\Internshala.Do
 G:\Intershala-clone\backend\Internshala.Domain\obj\Release\net8.0\refint\Internshala.Domain.dll
 G:\Intershala-clone\backend\Internshala.Domain\obj\Release\net8.0\Internshala.Domain.pdb
 G:\Intershala-clone\backend\Internshala.Domain\obj\Release\net8.0\ref\Internshala.Domain.dll
+G:\Intershala-clone\backend\Internshala.Domain\obj\Release\net8.0\Internshala.Domain.sourcelink.json

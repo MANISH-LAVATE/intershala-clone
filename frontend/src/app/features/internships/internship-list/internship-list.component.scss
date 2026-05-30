@@ -1,0 +1,110 @@
+@use '../../../../styles/variables' as v;
+@use '../../../../styles/breakpoints' as bp;
+
+.internship-list-page {
+  max-width: v.$container-max-lg;
+  margin: 0 auto;
+  padding: v.$space-6 v.$space-4;
+
+  @include bp.respond-to('lg') {
+    padding: v.$space-8;
+  }
+
+  &__header {
+    margin-bottom: v.$space-6;
+  }
+
+  &__title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0 0 v.$space-1;
+  }
+
+  &__count {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: v.$color-on-surface-muted;
+  }
+
+  &__toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: v.$space-3;
+    margin-top: v.$space-4;
+  }
+
+  &__search {
+    flex: 1;
+    min-width: 240px;
+  }
+
+  &__sort {
+    width: 160px;
+    flex-shrink: 0;
+  }
+
+  &__content {
+    display: flex;
+    gap: v.$space-6;
+    align-items: flex-start;
+  }
+
+  &__sidebar {
+    width: 280px;
+    flex-shrink: 0;
+    position: sticky;
+    top: calc(v.$header-height + v.$space-4);
+    max-height: calc(100vh - v.$header-height - v.$space-8);
+    overflow-y: auto;
+  }
+
+  &__results {
+    flex: 1;
+    min-width: 0;
+  }
+
+  &__grid {
+    display: grid;
+    gap: v.$space-4;
+    grid-template-columns: 1fr;
+
+    @include bp.respond-to('md') {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include bp.respond-to('xl') {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__mobile-filter {
+    position: fixed;
+    inset: 0;
+    background: v.$color-surface;
+    z-index: 200;
+    overflow-y: auto;
+    padding-bottom: v.$space-6;
+  }
+
+  &__mobile-filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: v.$space-4 v.$space-5;
+    border-bottom: 1px solid v.$color-border;
+    position: sticky;
+    top: 0;
+    background: v.$color-surface;
+    z-index: 1;
+
+    h2 {
+      margin: 0;
+      font-size: 1.125rem;
+    }
+  }
+
+  mat-paginator {
+    margin-top: v.$space-6;
+    border-top: 1px solid v.$color-border;
+  }
+}

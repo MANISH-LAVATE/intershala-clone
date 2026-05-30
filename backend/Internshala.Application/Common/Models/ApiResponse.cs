@@ -17,11 +17,13 @@ public sealed class ApiResponse<T>
     public static ApiResponse<T> Fail(string error)
         => new() { Success = false, Errors = [error] };
 
-    public static ApiResponse<T> Paginated(PagedResult<T> result, string message = "Success")
+    public static ApiResponse<IReadOnlyList<TItem>> Paginated<TItem>(
+        PagedResult<TItem> result,
+        string message = "Success")
         => new()
         {
             Success = true,
-            Data = result.Items is T items ? items : default,
+            Data = result.Items,
             Message = message,
             Pagination = new PaginationMeta
             {

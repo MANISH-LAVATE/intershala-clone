@@ -130,3 +130,4 @@ G:\Intershala-clone\backend\tests\Internshala.Application.Tests\bin\Release\net8
 G:\Intershala-clone\backend\tests\Internshala.Application.Tests\bin\Release\net8.0\Microsoft.Extensions.Caching.Memory.dll
 G:\Intershala-clone\backend\tests\Internshala.Application.Tests\bin\Release\net8.0\Microsoft.Extensions.DependencyInjection.dll
 G:\Intershala-clone\backend\tests\Internshala.Application.Tests\bin\Release\net8.0\Microsoft.Extensions.Logging.dll
+G:\Intershala-clone\backend\tests\Internshala.Application.Tests\obj\Release\net8.0\Internshala.Application.Tests.sourcelink.json

@@ -494,3 +494,4 @@ G:\Intershala-clone\backend\tests\Internshala.IntegrationTests\obj\Release\net8.
 G:\Intershala-clone\backend\tests\Internshala.IntegrationTests\obj\Release\net8.0\Internshala.IntegrationTests.pdb
 G:\Intershala-clone\backend\tests\Internshala.IntegrationTests\obj\Release\net8.0\Internshala.IntegrationTests.genruntimeconfig.cache
 G:\Intershala-clone\backend\tests\Internshala.IntegrationTests\obj\Release\net8.0\ref\Internshala.IntegrationTests.dll
+G:\Intershala-clone\backend\tests\Internshala.IntegrationTests\obj\Release\net8.0\Internshala.IntegrationTests.sourcelink.json

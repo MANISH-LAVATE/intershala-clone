@@ -57,7 +57,7 @@ export const API_ENDPOINTS = {
     INTERNSHIPS: '/admin/internships',
     ANALYTICS: '/admin/analytics',
   },
-  CATEGORIES: '/categories',
-  LOCATIONS: '/locations',
-  SKILLS: '/skills',
+  CATEGORIES: '/lookups/categories',
+  LOCATIONS: '/lookups/locations',
+  SKILLS: '/lookups/skills',
 } as const;

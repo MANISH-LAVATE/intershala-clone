@@ -15,3 +15,4 @@ G:\Intershala-clone\backend\Internshala.Application\obj\Release\net8.0\Internsha
 G:\Intershala-clone\backend\Internshala.Application\obj\Release\net8.0\refint\Internshala.Application.dll
 G:\Intershala-clone\backend\Internshala.Application\obj\Release\net8.0\Internshala.Application.pdb
 G:\Intershala-clone\backend\Internshala.Application\obj\Release\net8.0\ref\Internshala.Application.dll
+G:\Intershala-clone\backend\Internshala.Application\obj\Release\net8.0\Internshala.Application.sourcelink.json

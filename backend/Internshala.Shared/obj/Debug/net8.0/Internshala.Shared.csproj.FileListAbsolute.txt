@@ -1,0 +1,12 @@
+G:\Intershala-clone\backend\Internshala.Shared\bin\Debug\net8.0\Internshala.Shared.deps.json
+G:\Intershala-clone\backend\Internshala.Shared\bin\Debug\net8.0\Internshala.Shared.dll
+G:\Intershala-clone\backend\Internshala.Shared\bin\Debug\net8.0\Internshala.Shared.pdb
+G:\Intershala-clone\backend\Internshala.Shared\obj\Debug\net8.0\Internshala.Shared.GeneratedMSBuildEditorConfig.editorconfig
+G:\Intershala-clone\backend\Internshala.Shared\obj\Debug\net8.0\Internshala.Shared.AssemblyInfoInputs.cache
+G:\Intershala-clone\backend\Internshala.Shared\obj\Debug\net8.0\Internshala.Shared.AssemblyInfo.cs
+G:\Intershala-clone\backend\Internshala.Shared\obj\Debug\net8.0\Internshala.Shared.csproj.CoreCompileInputs.cache
+G:\Intershala-clone\backend\Internshala.Shared\obj\Debug\net8.0\Internshala.Shared.sourcelink.json
+G:\Intershala-clone\backend\Internshala.Shared\obj\Debug\net8.0\Internshala.Shared.dll
+G:\Intershala-clone\backend\Internshala.Shared\obj\Debug\net8.0\refint\Internshala.Shared.dll
+G:\Intershala-clone\backend\Internshala.Shared\obj\Debug\net8.0\Internshala.Shared.pdb
+G:\Intershala-clone\backend\Internshala.Shared\obj\Debug\net8.0\ref\Internshala.Shared.dll

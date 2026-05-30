@@ -1,0 +1,32 @@
+@use '../../../../styles/variables' as v;
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: v.$space-16 v.$space-8;
+  text-align: center;
+
+  &__icon {
+    font-size: 64px;
+    height: 64px;
+    width: 64px;
+    color: v.$color-neutral-400;
+    margin-bottom: v.$space-4;
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: v.$color-on-surface;
+    margin: 0 0 v.$space-2;
+  }
+
+  &__subtitle {
+    color: v.$color-on-surface-muted;
+    margin: 0 0 v.$space-6;
+    max-width: 320px;
+    line-height: 1.6;
+  }
+}

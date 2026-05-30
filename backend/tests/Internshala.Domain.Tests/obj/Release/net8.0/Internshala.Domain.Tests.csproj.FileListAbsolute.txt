@@ -97,3 +97,4 @@ G:\Intershala-clone\backend\tests\Internshala.Domain.Tests\obj\Release\net8.0\re
 G:\Intershala-clone\backend\tests\Internshala.Domain.Tests\obj\Release\net8.0\Internshala.Domain.Tests.pdb
 G:\Intershala-clone\backend\tests\Internshala.Domain.Tests\obj\Release\net8.0\Internshala.Domain.Tests.genruntimeconfig.cache
 G:\Intershala-clone\backend\tests\Internshala.Domain.Tests\obj\Release\net8.0\ref\Internshala.Domain.Tests.dll
+G:\Intershala-clone\backend\tests\Internshala.Domain.Tests\obj\Release\net8.0\Internshala.Domain.Tests.sourcelink.json

@@ -1,0 +1,177 @@
+@use '../../../../styles/variables' as v;
+@use '../../../../styles/breakpoints' as bp;
+
+.internship-card {
+  background: v.$color-surface;
+  border: 1px solid v.$color-border;
+  border-radius: v.$border-radius-lg;
+  padding: v.$space-5;
+  display: flex;
+  flex-direction: column;
+  gap: v.$space-3;
+  transition:
+    box-shadow v.$duration-normal v.$easing-standard,
+    transform v.$duration-normal v.$easing-standard;
+
+  &:hover {
+    box-shadow: v.$shadow-md;
+    transform: translateY(-2px);
+  }
+
+  &--featured {
+    border-color: v.$color-premium-500;
+    border-left: 4px solid v.$color-premium-500;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: v.$space-3;
+  }
+
+  &__company {
+    display: flex;
+    gap: v.$space-3;
+    align-items: flex-start;
+  }
+
+  &__logo {
+    width: 48px;
+    height: 48px;
+    border-radius: v.$border-radius-md;
+    object-fit: contain;
+    border: 1px solid v.$color-border;
+    flex-shrink: 0;
+    background: v.$color-neutral-50;
+  }
+
+  &__logo-placeholder {
+    width: 48px;
+    height: 48px;
+    border-radius: v.$border-radius-md;
+    background: v.$color-primary-100;
+    color: v.$color-primary-700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  &__company-name {
+    font-weight: 600;
+    font-size: 0.9375rem;
+    display: flex;
+    align-items: center;
+    gap: v.$space-1;
+    line-height: 1.3;
+  }
+
+  &__verified {
+    font-size: 16px;
+    height: 16px;
+    width: 16px;
+    color: v.$color-primary-500;
+  }
+
+  &__meta {
+    font-size: 0.8125rem;
+    margin-top: 2px;
+  }
+
+  &__featured-badge {
+    background: v.$color-premium-500;
+    color: white;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    padding: 2px v.$space-2;
+    border-radius: v.$border-radius-full;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  &__title {
+    font-size: 1.0625rem;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.35;
+
+    a {
+      color: v.$color-on-surface;
+      text-decoration: none;
+
+      &:hover {
+        color: v.$color-primary-600;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: v.$space-4;
+  }
+
+  &__detail {
+    display: flex;
+    align-items: center;
+    gap: v.$space-1;
+    font-size: 0.875rem;
+    color: v.$color-on-surface-muted;
+  }
+
+  &__detail-icon {
+    font-size: 16px;
+    height: 16px;
+    width: 16px;
+    color: v.$color-neutral-500;
+  }
+
+  &__skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: v.$space-1;
+  }
+
+  &__skill-badge {
+    background: v.$color-primary-50;
+    color: v.$color-primary-700;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 2px v.$space-2;
+    border-radius: v.$border-radius-full;
+    border: 1px solid v.$color-primary-100;
+
+    &--more {
+      background: v.$color-neutral-100;
+      color: v.$color-neutral-600;
+      border-color: v.$color-neutral-200;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: v.$space-1;
+    gap: v.$space-3;
+  }
+
+  &__posted {
+    flex: 1;
+    line-height: 1.4;
+  }
+
+  &__apply-btn {
+    border-radius: v.$border-radius-full !important;
+    font-weight: 600;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+}

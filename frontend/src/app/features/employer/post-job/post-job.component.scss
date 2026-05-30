@@ -1,0 +1,89 @@
+@use '../../../../styles/variables' as v;
+@use '../../../../styles/breakpoints' as bp;
+
+.post-job-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: v.$space-6 v.$space-4;
+
+  @include bp.respond-to('lg') {
+    padding: v.$space-8 v.$space-6;
+  }
+
+  &__header {
+    display: flex;
+    align-items: flex-start;
+    gap: v.$space-3;
+    margin-bottom: v.$space-8;
+
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin: 0 0 v.$space-1;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: v.$space-6;
+  }
+
+  &__section {
+    background: v.$color-surface;
+    border: 1px solid v.$color-border;
+    border-radius: v.$border-radius-lg;
+    padding: v.$space-6;
+    display: flex;
+    flex-direction: column;
+    gap: v.$space-4;
+
+    h2 {
+      font-size: 1.0625rem;
+      font-weight: 600;
+      margin: 0;
+      padding-bottom: v.$space-2;
+      border-bottom: 1px solid v.$color-border;
+    }
+
+    mat-form-field { width: 100%; }
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: v.$space-4;
+
+    @include bp.respond-to('sm') {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__error {
+    display: flex;
+    align-items: center;
+    gap: v.$space-2;
+    padding: v.$space-3 v.$space-4;
+    background: v.$color-status-closed-bg;
+    color: v.$color-status-closed-fg;
+    border-radius: v.$border-radius-md;
+    font-size: 0.875rem;
+
+    mat-icon { font-size: 18px; height: 18px; width: 18px; }
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: v.$space-3;
+    padding-top: v.$space-2;
+  }
+
+  &__submit {
+    min-width: 160px;
+    height: 48px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: v.$border-radius-full !important;
+  }
+}

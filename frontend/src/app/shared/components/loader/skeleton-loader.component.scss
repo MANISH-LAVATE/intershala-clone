@@ -1,0 +1,44 @@
+@use '../../../../styles/variables' as v;
+
+.skeleton-card {
+  background: v.$color-surface;
+  border: 1px solid v.$color-border;
+  border-radius: v.$border-radius-lg;
+  padding: v.$space-4;
+  margin-bottom: v.$space-4;
+
+  &__header {
+    display: flex;
+    gap: v.$space-3;
+    align-items: flex-start;
+  }
+}
+
+.skeleton-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, v.$color-neutral-200 25%, v.$color-neutral-100 50%, v.$color-neutral-200 75%);
+  background-size: 200% 100%;
+  flex-shrink: 0;
+
+  @media (prefers-reduced-motion: no-preference) {
+    animation: shimmer 1.5s infinite;
+  }
+}
+
+.skeleton-lines {
+  flex: 1;
+}
+
+.skeleton-line {
+  background: linear-gradient(90deg, v.$color-neutral-200 25%, v.$color-neutral-100 50%, v.$color-neutral-200 75%);
+  background-size: 200% 100%;
+  border-radius: v.$border-radius-sm;
+  height: 14px;
+  margin-bottom: v.$space-2;
+
+  @media (prefers-reduced-motion: no-preference) {
+    animation: shimmer 1.5s infinite;
+  }
+}

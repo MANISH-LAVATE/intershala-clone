@@ -1,5 +1,6 @@
 using Internshala.Application.Common.Interfaces;
 using Internshala.Domain.Entities;
+using Internshala.Infrastructure.Persistence.Seeders;
 using Microsoft.EntityFrameworkCore;
 using DomainApplication = Internshala.Domain.Entities.Application;
 
@@ -36,6 +37,10 @@ public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options
         modelBuilder.Entity<Job>().HasQueryFilter(e => !e.IsDeleted);
         modelBuilder.Entity<DomainApplication>().HasQueryFilter(e => !e.IsDeleted);
         modelBuilder.Entity<Notification>().HasQueryFilter(e => !e.IsDeleted);
+
+        CategorySeeder.Seed(modelBuilder);
+        LocationSeeder.Seed(modelBuilder);
+        SkillSeeder.Seed(modelBuilder);
 
         base.OnModelCreating(modelBuilder);
     }

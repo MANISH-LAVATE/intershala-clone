@@ -17,6 +17,11 @@ export const EMPLOYER_ROUTES: Routes = [
       ),
   },
   {
+    path: 'post-job',
+    loadComponent: () =>
+      import('./post-job/post-job.component').then((m) => m.PostJobComponent),
+  },
+  {
     path: 'applications',
     loadComponent: () =>
       import('./manage-applications/manage-applications.component').then(
