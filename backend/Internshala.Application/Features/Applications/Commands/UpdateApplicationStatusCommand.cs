@@ -1,5 +1,6 @@
 using Internshala.Application.Common.Interfaces;
 using Internshala.Application.Features.Applications.DTOs;
+using Internshala.Domain.Entities;
 using Internshala.Domain.Enums;
 using Internshala.Domain.Services;
 using Internshala.Shared.Constants;
@@ -15,7 +16,8 @@ public sealed record UpdateApplicationStatusCommand(
 
 public sealed class UpdateApplicationStatusCommandHandler(
     IApplicationDbContext db,
-    ICurrentUserService currentUser)
+    ICurrentUserService currentUser,
+    INotificationHubService notificationHub)
     : IRequestHandler<UpdateApplicationStatusCommand>
 {
     public async Task Handle(UpdateApplicationStatusCommand command, CancellationToken cancellationToken)
@@ -70,6 +72,49 @@ public sealed class UpdateApplicationStatusCommandHandler(
             ChangedBy = userId
         });
 
+        // Persist notification in DB
+        var student = await db.Students
+            .AsNoTracking()
+            .Include(s => s.User)
+            .FirstOrDefaultAsync(s => s.Id == application.StudentId, cancellationToken);
+
+        var listingTitle = application.ListingType == "Internship"
+            ? (await db.Internships.AsNoTracking()
+                .Where(i => i.Id == application.InternshipId)
+                .Select(i => i.Title)
+                .FirstOrDefaultAsync(cancellationToken) ?? "listing")
+            : (await db.Jobs.AsNoTracking()
+                .Where(j => j.Id == application.JobId)
+                .Select(j => j.Title)
+                .FirstOrDefaultAsync(cancellationToken) ?? "listing");
+
+        var statusLabel = newStatus.ToString();
+        var notificationMessage = $"Your application for '{listingTitle}' has been updated to {statusLabel}.";
+
+        if (student is not null)
+        {
+            db.Notifications.Add(new Notification
+            {
+                UserId = student.UserId,
+                Type = "ApplicationStatusUpdate",
+                Title = $"Application {statusLabel}",
+                Message = notificationMessage,
+                ActionUrl = $"/applications/{application.Id}"
+            });
+        }
+
         await db.SaveChangesAsync(cancellationToken);
+
+        // Push real-time notification via SignalR
+        if (student is not null)
+        {
+            await notificationHub.SendNotificationAsync(
+                student.UserId,
+                "ApplicationStatusUpdate",
+                $"Application {statusLabel}",
+                notificationMessage,
+                $"/applications/{application.Id}",
+                cancellationToken);
+        }
     }
 }

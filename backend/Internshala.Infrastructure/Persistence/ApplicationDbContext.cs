@@ -24,6 +24,9 @@ public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options
     public DbSet<Education> Educations => Set<Education>();
     public DbSet<Experience> Experiences => Set<Experience>();
     public DbSet<Resume> Resumes => Set<Resume>();
+    public DbSet<Course> Courses => Set<Course>();
+    public DbSet<CourseModule> CourseModules => Set<CourseModule>();
+    public DbSet<Enrollment> Enrollments => Set<Enrollment>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -37,6 +40,8 @@ public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options
         modelBuilder.Entity<Job>().HasQueryFilter(e => !e.IsDeleted);
         modelBuilder.Entity<DomainApplication>().HasQueryFilter(e => !e.IsDeleted);
         modelBuilder.Entity<Notification>().HasQueryFilter(e => !e.IsDeleted);
+        modelBuilder.Entity<Course>().HasQueryFilter(e => !e.IsDeleted);
+        modelBuilder.Entity<Enrollment>().HasQueryFilter(e => !e.IsDeleted);
 
         CategorySeeder.Seed(modelBuilder);
         LocationSeeder.Seed(modelBuilder);

@@ -1,6 +1,7 @@
 using Internshala.API.Middleware;
 using Internshala.Application;
 using Internshala.Infrastructure;
+using Internshala.Infrastructure.Hubs;
 using Microsoft.OpenApi.Models;
 using Serilog;
 
@@ -77,6 +78,7 @@ try
     app.UseAuthentication();
     app.UseAuthorization();
     app.MapControllers();
+    app.MapHub<NotificationHub>("/hubs/notifications");
     app.MapHealthChecks("/health");
 
     app.Run();

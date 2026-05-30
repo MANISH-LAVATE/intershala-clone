@@ -21,6 +21,9 @@ public interface IApplicationDbContext
     DbSet<Education> Educations { get; }
     DbSet<Experience> Experiences { get; }
     DbSet<Resume> Resumes { get; }
+    DbSet<Course> Courses { get; }
+    DbSet<CourseModule> CourseModules { get; }
+    DbSet<Enrollment> Enrollments { get; }
 
     Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
 }

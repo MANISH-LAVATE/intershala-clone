@@ -3,16 +3,25 @@ import {
   ChangeDetectionStrategy,
   inject,
   output,
+  OnInit,
+  OnDestroy,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { RouterLink, RouterLinkActive, Router } from '@angular/router';
+import { ReactiveFormsModule, FormControl } from '@angular/forms';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { debounceTime, distinctUntilChanged } from 'rxjs';
 import { AuthService } from '../../core/auth/services/auth.service';
+import { NotificationService } from '../../core/notifications/notification.service';
+import { TokenStorageService } from '../../core/auth/services/token-storage.service';
+import { NotificationItem } from '../../core/notifications/notification.model';
 
 @Component({
   selector: 'app-header',
@@ -21,12 +30,15 @@ import { AuthService } from '../../core/auth/services/auth.service';
     CommonModule,
     RouterLink,
     RouterLinkActive,
+    ReactiveFormsModule,
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
     MatMenuModule,
     MatBadgeModule,
     MatDividerModule,
+    MatFormFieldModule,
+    MatInputModule,
   ],
   template: `
     <mat-toolbar class="header" role="banner">
@@ -47,12 +59,75 @@ import { AuthService } from '../../core/auth/services/auth.service';
         }
       </nav>
 
+      <!-- Search bar -->
+      <div class="header__search">
+        <mat-form-field appearance="outline" class="header__search-field">
+          <mat-icon matPrefix>search</mat-icon>
+          <input
+            matInput
+            [formControl]="searchControl"
+            placeholder="Search internships, jobs, courses…"
+            aria-label="Global search"
+          />
+        </mat-form-field>
+      </div>
+
       <span class="header__spacer"></span>
 
       @if (authService.isAuthenticated()) {
-        <button mat-icon-button aria-label="Notifications" [matBadge]="'3'" matBadgeColor="warn">
+        <!-- Notification bell -->
+        <button
+          mat-icon-button
+          aria-label="Notifications"
+          [matMenuTriggerFor]="notificationMenu"
+          (menuOpened)="onNotificationsOpen()"
+          [matBadge]="notificationService.unreadCount() > 0 ? notificationService.unreadCount().toString() : null"
+          matBadgeColor="warn"
+        >
           <mat-icon>notifications_none</mat-icon>
         </button>
+
+        <mat-menu #notificationMenu="matMenu" class="notification-menu">
+          <div class="notification-panel">
+            <div class="notification-panel__header">
+              <strong>Notifications</strong>
+              @if (notificationService.unreadCount() > 0) {
+                <button mat-button color="primary" (click)="markAllRead()">
+                  Mark all read
+                </button>
+              }
+            </div>
+            @if (notificationService.notifications().length === 0) {
+              <div class="notification-panel__empty">
+                <mat-icon>notifications_none</mat-icon>
+                <p>No notifications</p>
+              </div>
+            } @else {
+              @for (n of notificationService.notifications().slice(0, 8); track n.id) {
+                <div
+                  class="notification-item"
+                  [class.notification-item--unread]="!n.isRead"
+                  (click)="onNotificationClick(n)"
+                  (keydown)="$event.key === 'Enter' && onNotificationClick(n)"
+                  role="button"
+                  [attr.aria-label]="n.title"
+                  tabindex="0"
+                >
+                  <div class="notification-item__dot" [class.visible]="!n.isRead"></div>
+                  <div class="notification-item__content">
+                    <p class="notification-item__title">{{ n.title }}</p>
+                    <p class="notification-item__message">{{ n.message }}</p>
+                    <p class="notification-item__time">{{ n.createdAt | date:'shortTime' }}</p>
+                  </div>
+                </div>
+              }
+            }
+            <mat-divider />
+            <a mat-button routerLink="/notifications" class="notification-panel__see-all">
+              See all notifications
+            </a>
+          </div>
+        </mat-menu>
 
         <button mat-icon-button [matMenuTriggerFor]="profileMenu" aria-label="Profile menu">
           <mat-icon>account_circle</mat-icon>
@@ -71,6 +146,9 @@ import { AuthService } from '../../core/auth/services/auth.service';
             <a mat-menu-item routerLink="/applications">
               <mat-icon>assignment</mat-icon> My Applications
             </a>
+            <a mat-menu-item routerLink="/courses/my">
+              <mat-icon>school</mat-icon> My Courses
+            </a>
           }
           @if (authService.isEmployer()) {
             <a mat-menu-item routerLink="/employer/dashboard">
@@ -83,7 +161,7 @@ import { AuthService } from '../../core/auth/services/auth.service';
             </a>
           }
           <mat-divider />
-          <button mat-menu-item (click)="authService.logout()">
+          <button mat-menu-item (click)="logout()">
             <mat-icon>logout</mat-icon> Logout
           </button>
         </mat-menu>
@@ -96,7 +174,59 @@ import { AuthService } from '../../core/auth/services/auth.service';
   styleUrl: './header.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit, OnDestroy {
   readonly authService = inject(AuthService);
+  readonly notificationService = inject(NotificationService);
+  private readonly tokenStorage = inject(TokenStorageService);
+  private readonly router = inject(Router);
   readonly menuToggled = output<void>();
+
+  readonly searchControl = new FormControl('');
+
+  ngOnInit(): void {
+    if (this.authService.isAuthenticated()) {
+      this.notificationService.loadNotifications();
+      const token = this.tokenStorage.getAccessToken();
+      if (token) {
+        this.notificationService.startSignalRConnection(token);
+      }
+    }
+
+    this.searchControl.valueChanges
+      .pipe(debounceTime(300), distinctUntilChanged())
+      .subscribe((q) => {
+        if (q && q.trim().length >= 2) {
+          this.router.navigate(['/search'], { queryParams: { q } });
+        }
+      });
+  }
+
+  ngOnDestroy(): void {
+    this.notificationService.stopSignalRConnection();
+  }
+
+  onNotificationsOpen(): void {
+    this.notificationService.loadNotifications();
+  }
+
+  onNotificationClick(n: NotificationItem): void {
+    if (!n.isRead) {
+      this.notificationService.markRead(n.id).subscribe();
+      this.notificationService.unreadCount.update((c) => Math.max(0, c - 1));
+    }
+    if (n.actionUrl) {
+      this.router.navigateByUrl(n.actionUrl);
+    }
+  }
+
+  markAllRead(): void {
+    this.notificationService.markAllRead().subscribe(() => {
+      this.notificationService.unreadCount.set(0);
+    });
+  }
+
+  logout(): void {
+    this.notificationService.stopSignalRConnection();
+    this.authService.logout();
+  }
 }

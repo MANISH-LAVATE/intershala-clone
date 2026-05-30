@@ -1,0 +1,112 @@
+.course-detail-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px;
+
+  &__breadcrumb { margin-bottom: 16px; a { display: inline-flex; align-items: center; gap: 4px; } }
+
+  &__layout {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 24px;
+    align-items: start;
+
+    @media (max-width: 768px) { grid-template-columns: 1fr; }
+  }
+
+  &__main { display: flex; flex-direction: column; gap: 20px; }
+
+  &__sidebar {
+    @media (min-width: 769px) { position: sticky; top: 80px; }
+  }
+}
+
+.course-hero {
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #1a237e;
+  color: white;
+
+  &__image { width: 100%; max-height: 300px; object-fit: cover; }
+
+  &__content { padding: 24px; }
+
+  &__category {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0 0 8px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  &__title { font-size: 1.75rem; font-weight: 700; margin: 0 0 8px; }
+
+  &__instructor { margin: 0 0 12px; opacity: 0.85; font-size: 0.95rem; }
+
+  &__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    font-size: 0.875rem;
+    opacity: 0.9;
+
+    span { display: flex; align-items: center; gap: 4px; mat-icon { font-size: 16px; width: 16px; height: 16px; } }
+  }
+}
+
+.progress-card {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+}
+
+.course-text { white-space: pre-wrap; line-height: 1.7; margin: 0; }
+.course-prerequisites { margin-top: 12px; }
+
+mat-expansion-panel mat-icon { vertical-align: middle; margin-right: 8px; font-size: 18px; width: 18px; height: 18px; }
+
+.preview-chip { font-size: 0.7rem; height: 18px; background-color: #e3f2fd !important; color: #1565c0 !important; }
+
+.enroll-card {
+  &__price { font-size: 1.75rem; font-weight: 700; color: var(--mat-primary-color, #1565c0); margin: 0 0 16px; }
+
+  &__enrolled {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    color: #2e7d32;
+    font-weight: 600;
+  }
+
+  &__features {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 0;
+      font-size: 0.875rem;
+
+      mat-icon { font-size: 18px; width: 18px; height: 18px; color: var(--mat-primary-color, #1565c0); }
+    }
+  }
+}
+
+.enroll-btn { width: 100%; }
+
+.level-chip {
+  font-size: 0.7rem;
+  &--beginner { background-color: #e8f5e9 !important; color: #2e7d32 !important; }
+  &--intermediate { background-color: #fff8e1 !important; color: #f57f17 !important; }
+  &--advanced { background-color: #fce4ec !important; color: #880e4f !important; }
+}
+
+.text-muted { color: rgba(255, 255, 255, 0.7); }

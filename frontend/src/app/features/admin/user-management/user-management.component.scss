@@ -1,0 +1,60 @@
+.user-management-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+
+    a { display: inline-flex; align-items: center; gap: 4px; }
+  }
+
+  &__title { font-size: 1.75rem; font-weight: 600; margin: 0; }
+
+  &__filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+}
+
+.filter-search { min-width: 280px; flex: 1; }
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-name {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+}
+
+.user-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #e3f2fd;
+  color: #1565c0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.role-chip {
+  font-size: 0.75rem;
+  height: 22px;
+  &--student { background-color: #e3f2fd !important; color: #1565c0 !important; }
+  &--employer { background-color: #fff3e0 !important; color: #e65100 !important; }
+  &--admin { background-color: #fce4ec !important; color: #880e4f !important; }
+}
+
+.text-muted { color: var(--mat-secondary-text-color, #666); font-size: 0.8rem; }

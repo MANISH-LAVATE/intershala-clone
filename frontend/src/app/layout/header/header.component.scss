@@ -46,6 +46,25 @@
     }
   }
 
+  &__search {
+    display: none;
+
+    @include bp.respond-to('md') {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      max-width: 380px;
+      margin: 0 v.$space-4;
+    }
+  }
+
+  &__search-field {
+    width: 100%;
+
+    ::ng-deep .mat-mdc-form-field-wrapper { padding: 0; }
+    ::ng-deep .mat-mdc-text-field-wrapper { background-color: rgba(0, 0, 0, 0.04); }
+  }
+
   &__spacer {
     flex: 1;
   }

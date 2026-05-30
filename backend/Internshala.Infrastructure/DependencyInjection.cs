@@ -1,5 +1,6 @@
 using System.Text;
 using Internshala.Application.Common.Interfaces;
+using Internshala.Infrastructure.Hubs;
 using Internshala.Infrastructure.Persistence;
 using Internshala.Infrastructure.Services;
 using Internshala.Infrastructure.Settings;
@@ -32,6 +33,8 @@ public static class DependencyInjection
         services.AddScoped<IJwtService, JwtService>();
         services.AddScoped<IEmailService, EmailService>();
         services.AddSingleton<IPasswordHasher, BcryptPasswordHasher>();
+        services.AddSignalR();
+        services.AddScoped<INotificationHubService, NotificationHubService>();
 
         var jwtSettings = configuration.GetSection("Jwt").Get<JwtSettings>()
             ?? throw new InvalidOperationException("JWT settings are not configured.");
@@ -50,6 +53,18 @@ public static class DependencyInjection
                     IssuerSigningKey = new SymmetricSecurityKey(
                         Encoding.UTF8.GetBytes(jwtSettings.SecretKey)),
                     ClockSkew = TimeSpan.Zero
+                };
+                // Allow SignalR WebSocket connections to pass token via query string
+                options.Events = new JwtBearerEvents
+                {
+                    OnMessageReceived = context =>
+                    {
+                        var token = context.Request.Query["access_token"].ToString();
+                        if (!string.IsNullOrEmpty(token) &&
+                            context.HttpContext.Request.Path.StartsWithSegments("/hubs"))
+                            context.Token = token;
+                        return Task.CompletedTask;
+                    }
                 };
             });
 

@@ -1,0 +1,74 @@
+.my-courses-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 16px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    a { display: inline-flex; align-items: center; gap: 4px; }
+  }
+
+  &__title { font-size: 1.75rem; font-weight: 600; margin: 0; }
+}
+
+.enrollments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.enrollment-card {
+  border-radius: 8px;
+  overflow: hidden;
+
+  &__thumb {
+    position: relative;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    background-color: #e3f2fd;
+
+    img { width: 100%; height: 100%; object-fit: cover; }
+  }
+
+  &__thumb-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    mat-icon { font-size: 48px; width: 48px; height: 48px; color: #1565c0; }
+  }
+
+  &__badge {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+
+  &__title { font-size: 1rem; font-weight: 600; margin: 0 0 8px; }
+
+  &__progress-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: var(--mat-secondary-text-color, #666);
+    margin-bottom: 4px;
+  }
+
+  &__date { font-size: 0.8rem; margin-top: 8px; }
+}
+
+.text-muted { color: var(--mat-secondary-text-color, #666); }
