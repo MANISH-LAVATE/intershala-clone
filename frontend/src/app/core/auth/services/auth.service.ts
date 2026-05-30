@@ -1,7 +1,7 @@
 import { Injectable, inject, signal, computed } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
-import { Observable, tap, catchError, throwError, switchMap } from 'rxjs';
+import { Observable, tap, catchError, throwError } from 'rxjs';
 import { environment } from '../../../../environments/environment';
 import { API_ENDPOINTS } from '../../constants/api-endpoints.constant';
 import { TokenStorageService } from './token-storage.service';
@@ -92,7 +92,7 @@ export class AuthService {
     if (refreshToken) {
       this.http
         .post(`${this.baseUrl}${API_ENDPOINTS.AUTH.LOGOUT}`, { refreshToken })
-        .subscribe({ error: () => {} });
+        .subscribe({ error: () => { /* fire-and-forget logout */ } });
     }
     this.tokenStorage.clearAll();
     this._currentUser.set(null);

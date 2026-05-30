@@ -1,6 +1,6 @@
 import { Injectable, inject, signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { tap, catchError, of } from 'rxjs';
+import { catchError, of } from 'rxjs';
 import { environment } from '../../../environments/environment';
 import { API_ENDPOINTS } from '../constants/api-endpoints.constant';
 import { CategoryDto, LocationDto, SkillDto } from '../../shared/models/lookup.model';

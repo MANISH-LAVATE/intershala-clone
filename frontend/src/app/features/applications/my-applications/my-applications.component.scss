@@ -1,0 +1,163 @@
+.my-applications-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 16px;
+
+  &__header {
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin: 0 0 4px;
+  }
+
+  &__content {
+    margin-top: 24px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.application-card {
+  border-left: 4px solid var(--mat-primary-color, #1565c0);
+  transition: box-shadow 0.2s;
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  }
+
+  &--withdrawn {
+    border-left-color: var(--mat-warn-color, #c62828);
+    opacity: 0.75;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8px;
+  }
+
+  &__company {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__logo {
+    border-radius: 4px;
+    object-fit: contain;
+  }
+
+  &__logo-placeholder {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #e3f2fd;
+    color: #1565c0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+
+  &__company-name {
+    font-weight: 600;
+    margin: 0 0 2px;
+    font-size: 0.95rem;
+  }
+
+  &__listing-type {
+    margin: 0;
+    font-size: 0.8rem;
+    color: var(--mat-secondary-text-color, #666);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  &__title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 4px 0 12px;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 0.875rem;
+    color: var(--mat-secondary-text-color, #666);
+
+    span {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+
+      mat-icon {
+        font-size: 16px;
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  &__note,
+  &__rejection {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 12px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.875rem;
+
+    mat-icon {
+      font-size: 18px;
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+  }
+
+  &__note {
+    background-color: #e3f2fd;
+    color: #1565c0;
+  }
+
+  &__rejection {
+    background-color: #ffebee;
+    color: #c62828;
+  }
+}
+
+.status-chip {
+  &--applied { background-color: #e3f2fd !important; color: #1565c0 !important; }
+  &--underreview { background-color: #fff8e1 !important; color: #f57f17 !important; }
+  &--shortlisted { background-color: #e8f5e9 !important; color: #2e7d32 !important; }
+  &--interviewscheduled { background-color: #f3e5f5 !important; color: #6a1b9a !important; }
+  &--selected { background-color: #e8f5e9 !important; color: #1b5e20 !important; }
+  &--rejected { background-color: #ffebee !important; color: #c62828 !important; }
+  &--withdrawn { background-color: #f5f5f5 !important; color: #616161 !important; }
+}
+
+.text-muted {
+  color: var(--mat-secondary-text-color, #666);
+  margin: 0;
+}

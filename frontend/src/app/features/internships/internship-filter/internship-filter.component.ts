@@ -15,7 +15,6 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule } from '@angular/material/button';
 import { MatExpansionModule } from '@angular/material/expansion';
-import { debounceTime, distinctUntilChanged } from 'rxjs';
 import { LookupService } from '../../../core/services/lookup.service';
 import { InternshipFilters } from '../models/internship.model';
 
