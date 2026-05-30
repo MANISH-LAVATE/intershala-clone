@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.angular/
+coverage/
+e2e/
+*.md
+.gitignore
+.eslintrc*
+.prettierrc*

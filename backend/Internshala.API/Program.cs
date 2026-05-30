@@ -2,8 +2,10 @@ using Internshala.API.Middleware;
 using Internshala.Application;
 using Internshala.Infrastructure;
 using Internshala.Infrastructure.Hubs;
+using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.OpenApi.Models;
 using Serilog;
+using System.Threading.RateLimiting;
 
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
@@ -22,6 +24,23 @@ try
     builder.Services.AddApplication();
     builder.Services.AddInfrastructure(builder.Configuration);
     builder.Services.AddMemoryCache();
+    builder.Services.AddOutputCache(opts =>
+    {
+        opts.AddPolicy("listings", p => p.Expire(TimeSpan.FromSeconds(60)).Tag("listings"));
+    });
+
+    // Rate limiting — 5 auth requests per minute per IP
+    builder.Services.AddRateLimiter(opts =>
+    {
+        opts.AddFixedWindowLimiter("auth", limiterOpts =>
+        {
+            limiterOpts.PermitLimit = 5;
+            limiterOpts.Window = TimeSpan.FromMinutes(1);
+            limiterOpts.QueueProcessingOrder = QueueProcessingOrder.OldestFirst;
+            limiterOpts.QueueLimit = 0;
+        });
+        opts.RejectionStatusCode = StatusCodes.Status429TooManyRequests;
+    });
 
     builder.Services.AddControllers();
     builder.Services.AddEndpointsApiExplorer();
@@ -52,7 +71,9 @@ try
     builder.Services.AddCors(options =>
     {
         options.AddPolicy("AllowAngularDev", policy =>
-            policy.WithOrigins("http://localhost:4200")
+            policy.WithOrigins(
+                    "http://localhost:4200",
+                    builder.Configuration["AllowedOrigins"] ?? "http://localhost:4200")
                   .AllowAnyHeader()
                   .AllowAnyMethod()
                   .AllowCredentials());
@@ -65,6 +86,7 @@ try
 
     app.UseMiddleware<CorrelationIdMiddleware>();
     app.UseMiddleware<ExceptionHandlingMiddleware>();
+    app.UseMiddleware<SecurityHeadersMiddleware>();
 
     if (app.Environment.IsDevelopment())
     {
@@ -75,6 +97,8 @@ try
     app.UseSerilogRequestLogging();
     app.UseCors("AllowAngularDev");
     app.UseHttpsRedirection();
+    app.UseOutputCache();
+    app.UseRateLimiter();
     app.UseAuthentication();
     app.UseAuthorization();
     app.MapControllers();

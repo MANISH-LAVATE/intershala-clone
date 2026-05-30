@@ -1,6 +1,42 @@
 version: '3.9'
 
 services:
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: internshala-api
+    ports:
+      - "5000:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: "Server=sqlserver,1433;Database=InternshalaDb;User Id=SA;Password=DevPassword123!;TrustServerCertificate=True"
+      Jwt__SecretKey: "${JWT_SECRET_KEY:-change-me-in-production-32-chars}"
+      Jwt__Issuer: "Internshala"
+      Jwt__Audience: "InternshalaClient"
+      Jwt__ExpiryMinutes: "15"
+      Serilog__WriteTo__0__Name: "Seq"
+      Serilog__WriteTo__0__Args__serverUrl: "http://seq:5341"
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8080/health || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: internshala-frontend
+    ports:
+      - "4200:80"
+    depends_on:
+      - api
+
   sqlserver:
     image: mcr.microsoft.com/mssql/server:2022-latest
     container_name: internshala-sqlserver

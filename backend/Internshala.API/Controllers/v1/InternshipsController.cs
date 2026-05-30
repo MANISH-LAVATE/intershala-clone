@@ -7,6 +7,7 @@ using Internshala.Shared.Pagination;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OutputCaching;
 
 namespace Internshala.API.Controllers.v1;
 
@@ -16,6 +17,7 @@ namespace Internshala.API.Controllers.v1;
 public sealed class InternshipsController(ISender mediator) : ControllerBase
 {
     [HttpGet]
+    [OutputCache(PolicyName = "listings")]
     [ProducesResponseType(typeof(ApiResponse<PagedResult<InternshipListDto>>), StatusCodes.Status200OK)]
     public async Task<IActionResult> GetInternships(
         [FromQuery] InternshipFilterParams filters,

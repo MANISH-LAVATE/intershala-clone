@@ -4,6 +4,7 @@ using Internshala.Application.Features.Auth.DTOs;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
 
 namespace Internshala.API.Controllers.v1;
 
@@ -12,6 +13,7 @@ namespace Internshala.API.Controllers.v1;
 [Produces("application/json")]
 public sealed class AuthController(ISender mediator) : ControllerBase
 {
+    [EnableRateLimiting("auth")]
     [HttpPost("register/student")]
     [ProducesResponseType(typeof(ApiResponse<TokenResponseDto>), StatusCodes.Status201Created)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status409Conflict)]
@@ -26,6 +28,7 @@ public sealed class AuthController(ISender mediator) : ControllerBase
         return StatusCode(StatusCodes.Status201Created, ApiResponse<TokenResponseDto>.Ok(result, "Registration successful."));
     }
 
+    [EnableRateLimiting("auth")]
     [HttpPost("register/employer")]
     [ProducesResponseType(typeof(ApiResponse<TokenResponseDto>), StatusCodes.Status201Created)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status409Conflict)]
@@ -40,6 +43,7 @@ public sealed class AuthController(ISender mediator) : ControllerBase
         return StatusCode(StatusCodes.Status201Created, ApiResponse<TokenResponseDto>.Ok(result, "Registration successful."));
     }
 
+    [EnableRateLimiting("auth")]
     [HttpPost("login")]
     [ProducesResponseType(typeof(ApiResponse<TokenResponseDto>), StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status401Unauthorized)]
