@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\intershala-clone\\backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DA325EDC-2828-488B-AD31-E2B7F7041247}|Internshala.API\\Internshala.API.csproj|d:\\intershala-clone\\backend\\internshala.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA325EDC-2828-488B-AD31-E2B7F7041247}|Internshala.API\\Internshala.API.csproj|solutionrelative:internshala.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA325EDC-2828-488B-AD31-E2B7F7041247}|Internshala.API\\Internshala.API.csproj|d:\\intershala-clone\\backend\\internshala.api\\controllers\\v1\\internshipscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA325EDC-2828-488B-AD31-E2B7F7041247}|Internshala.API\\Internshala.API.csproj|solutionrelative:internshala.api\\controllers\\v1\\internshipscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\intershala-clone\\backend\\Internshala.API\\Program.cs",
+              "RelativeDocumentMoniker": "Internshala.API\\Program.cs",
+              "ToolTip": "D:\\intershala-clone\\backend\\Internshala.API\\Program.cs*",
+              "RelativeToolTip": "Internshala.API\\Program.cs*",
+              "ViewState": "AgIAAFMAAAAAAAAAAAD4v1oAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T11:26:10.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InternshipsController.cs",
+              "DocumentMoniker": "D:\\intershala-clone\\backend\\Internshala.API\\Controllers\\v1\\InternshipsController.cs",
+              "RelativeDocumentMoniker": "Internshala.API\\Controllers\\v1\\InternshipsController.cs",
+              "ToolTip": "D:\\intershala-clone\\backend\\Internshala.API\\Controllers\\v1\\InternshipsController.cs",
+              "RelativeToolTip": "Internshala.API\\Controllers\\v1\\InternshipsController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAYwB8AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T11:19:07.147Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

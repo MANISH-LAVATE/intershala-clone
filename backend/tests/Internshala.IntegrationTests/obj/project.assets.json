@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net8.0": {
       "Asp.Versioning.Abstractions/8.1.0": {
@@ -487,6 +487,22 @@
         },
         "runtime": {
           "lib/netstandard2.0/_._": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.InMemory/8.0.14": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.14"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.EntityFrameworkCore.Relational/8.0.14": {
@@ -3647,7 +3663,7 @@
           "Asp.Versioning.Mvc": "8.1.0",
           "Asp.Versioning.Mvc.ApiExplorer": "8.1.0",
           "AspNetCore.HealthChecks.SqlServer": "8.0.2",
-          "AspNetCore.HealthChecks.UI.Client": "8.0.2",
+          "AspNetCore.HealthChecks.UI.Client": "9.0.0",
           "Internshala.Application": "1.0.0",
           "Internshala.Infrastructure": "1.0.0",
           "Internshala.Shared": "1.0.0",
@@ -4369,6 +4385,21 @@
         "lib/netstandard2.0/_._",
         "microsoft.entityframeworkcore.analyzers.8.0.14.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.InMemory/8.0.14": {
+      "sha512": "q0/yGN42dy/ph9tV1ecuvrzpfkGuGdjyfdWNSXylQ0CDUidBCG6o+srOyOPg32gbjV0nLRv9YFkrS4xprXwAew==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.inmemory/8.0.14",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll",
+        "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.xml",
+        "microsoft.entityframeworkcore.inmemory.8.0.14.nupkg.sha512",
+        "microsoft.entityframeworkcore.inmemory.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational/8.0.14": {
@@ -10615,6 +10646,7 @@
       "FluentAssertions >= 8.10.0",
       "Internshala.API >= 1.0.0",
       "Microsoft.AspNetCore.Mvc.Testing >= 8.0.14",
+      "Microsoft.EntityFrameworkCore.InMemory >= 8.0.14",
       "Microsoft.NET.Test.Sdk >= 17.8.0",
       "coverlet.collector >= 6.0.0",
       "xunit >= 2.5.3",
@@ -10622,23 +10654,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\manish.lavate\\.nuget\\packages\\": {},
+    "C:\\Users\\ADMIN\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Intershala-clone\\backend\\tests\\Internshala.IntegrationTests\\Internshala.IntegrationTests.csproj",
+      "projectUniqueName": "D:\\intershala-clone\\backend\\tests\\Internshala.IntegrationTests\\Internshala.IntegrationTests.csproj",
       "projectName": "Internshala.IntegrationTests",
-      "projectPath": "G:\\Intershala-clone\\backend\\tests\\Internshala.IntegrationTests\\Internshala.IntegrationTests.csproj",
-      "packagesPath": "C:\\Users\\manish.lavate\\.nuget\\packages\\",
-      "outputPath": "G:\\Intershala-clone\\backend\\tests\\Internshala.IntegrationTests\\obj\\",
+      "projectPath": "D:\\intershala-clone\\backend\\tests\\Internshala.IntegrationTests\\Internshala.IntegrationTests.csproj",
+      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+      "outputPath": "D:\\intershala-clone\\backend\\tests\\Internshala.IntegrationTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\manish.lavate\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -10647,14 +10679,16 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "projectReferences": {
-            "G:\\Intershala-clone\\backend\\Internshala.API\\Internshala.API.csproj": {
-              "projectPath": "G:\\Intershala-clone\\backend\\Internshala.API\\Internshala.API.csproj"
+            "D:\\intershala-clone\\backend\\Internshala.API\\Internshala.API.csproj": {
+              "projectPath": "D:\\intershala-clone\\backend\\Internshala.API\\Internshala.API.csproj"
             }
           }
         }
@@ -10668,10 +10702,12 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net8.0": {
+        "framework": "net8.0",
         "targetAlias": "net8.0",
         "dependencies": {
           "FluentAssertions": {
@@ -10679,6 +10715,10 @@
             "version": "[8.10.0, )"
           },
           "Microsoft.AspNetCore.Mvc.Testing": {
+            "target": "Package",
+            "version": "[8.0.14, )"
+          },
+          "Microsoft.EntityFrameworkCore.InMemory": {
             "target": "Package",
             "version": "[8.0.14, )"
           },
@@ -10715,20 +10755,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Internshala.API depends on AspNetCore.HealthChecks.UI.Client (>= 8.0.2) but AspNetCore.HealthChecks.UI.Client 8.0.2 was not found. An approximate best match of AspNetCore.HealthChecks.UI.Client 9.0.0 was resolved.",
-      "libraryId": "AspNetCore.HealthChecks.UI.Client",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  }
 }
