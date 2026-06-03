@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Internshala.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a6ab066626d07d817e431a327190c2c9d67aa818")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+226b72309ab793f70845f18b15eb8bf1aa0f03c5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Internshala.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Internshala.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -191,203 +191,356 @@ namespace Internshala.Infrastructure.Persistence.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3197),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6446),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Engineering & Technology",
                             Slug = "engineering-technology",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3206)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6447)
                         },
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3215),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6450),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Marketing",
                             Slug = "marketing",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3216)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6450)
                         },
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3217),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6451),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Business Development",
                             Slug = "business-development",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3218)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6452)
                         },
                         new
                         {
                             Id = 4,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3219),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6452),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Finance & Accounting",
                             Slug = "finance-accounting",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3219)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6453)
                         },
                         new
                         {
                             Id = 5,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3221),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6453),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Human Resources",
                             Slug = "human-resources",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3221)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6453)
                         },
                         new
                         {
                             Id = 6,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3222),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6454),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Design & UX",
                             Slug = "design-ux",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3223)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6454)
                         },
                         new
                         {
                             Id = 7,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3224),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6455),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Content & Journalism",
                             Slug = "content-journalism",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3224)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6455)
                         },
                         new
                         {
                             Id = 8,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3226),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6456),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Data Science & Analytics",
                             Slug = "data-science-analytics",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3226)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6456)
                         },
                         new
                         {
                             Id = 9,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3227),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6457),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Operations",
                             Slug = "operations",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3228)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6457)
                         },
                         new
                         {
                             Id = 10,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3229),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6457),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Sales",
                             Slug = "sales",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3229)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6458)
                         },
                         new
                         {
                             Id = 11,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3230),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6458),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Legal",
                             Slug = "legal",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3231)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6458)
                         },
                         new
                         {
                             Id = 12,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3232),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6459),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Education & Teaching",
                             Slug = "education-teaching",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3232)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6459)
                         },
                         new
                         {
                             Id = 13,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3234),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6460),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Healthcare & Medicine",
                             Slug = "healthcare-medicine",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3234)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6460)
                         },
                         new
                         {
                             Id = 14,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3235),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6460),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Social Media",
                             Slug = "social-media",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3236)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6461)
                         },
                         new
                         {
                             Id = 15,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3239),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6461),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Research",
                             Slug = "research",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3250)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6461)
                         },
                         new
                         {
                             Id = 16,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3251),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6462),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Architecture",
                             Slug = "architecture",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3252)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6462)
                         },
                         new
                         {
                             Id = 17,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3253),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6463),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Event Management",
                             Slug = "event-management",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3253)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6463)
                         },
                         new
                         {
                             Id = 18,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3255),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6464),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Supply Chain",
                             Slug = "supply-chain",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3255)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6464)
                         },
                         new
                         {
                             Id = 19,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3256),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6464),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Media & Entertainment",
                             Slug = "media-entertainment",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3256)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6464)
                         },
                         new
                         {
                             Id = 20,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3258),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6465),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "NGO / Social Work",
                             Slug = "ngo-social-work",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3258)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6465)
                         });
+                });
+
+            modelBuilder.Entity("Internshala.Domain.Entities.Course", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("CreatedBy")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("DurationHours")
+                        .HasColumnType("int");
+
+                    b.Property<int>("EnrolledCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Instructor")
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsFree")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsPublished")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Language")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Level")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("Prerequisites")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Price")
+                        .HasPrecision(10, 2)
+                        .HasColumnType("decimal(10,2)");
+
+                    b.Property<byte[]>("RowVersion")
+                        .IsConcurrencyToken()
+                        .IsRequired()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("rowversion");
+
+                    b.Property<string>("ThumbnailUrl")
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(300)
+                        .HasColumnType("nvarchar(300)");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("UpdatedBy")
+                        .HasColumnType("int");
+
+                    b.Property<string>("WhatYouLearn")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
+
+                    b.HasIndex("IsDeleted", "IsPublished", "CategoryId");
+
+                    b.ToTable("Courses");
+                });
+
+            modelBuilder.Entity("Internshala.Domain.Entities.CourseModule", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Content")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("CreatedBy")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("DurationMinutes")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsPreview")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("OrderIndex")
+                        .HasColumnType("int");
+
+                    b.Property<byte[]>("RowVersion")
+                        .IsConcurrencyToken()
+                        .IsRequired()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("rowversion");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(300)
+                        .HasColumnType("nvarchar(300)");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("UpdatedBy")
+                        .HasColumnType("int");
+
+                    b.Property<string>("VideoUrl")
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CourseId", "OrderIndex")
+                        .IsUnique();
+
+                    b.ToTable("CourseModules");
                 });
 
             modelBuilder.Entity("Internshala.Domain.Entities.Education", b =>
@@ -538,6 +691,64 @@ namespace Internshala.Infrastructure.Persistence.Migrations
                         .IsUnique();
 
                     b.ToTable("Employers");
+                });
+
+            modelBuilder.Entity("Internshala.Domain.Entities.Enrollment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime?>("CompletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("CompletedModules")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("CreatedBy")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("LastAccessedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<byte>("ProgressPercent")
+                        .HasColumnType("tinyint");
+
+                    b.Property<byte[]>("RowVersion")
+                        .IsConcurrencyToken()
+                        .IsRequired()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("rowversion");
+
+                    b.Property<int>("StudentId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("UpdatedBy")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CourseId");
+
+                    b.HasIndex("StudentId", "CourseId")
+                        .IsUnique()
+                        .HasFilter("[IsDeleted] = 0");
+
+                    b.ToTable("Enrollments");
                 });
 
             modelBuilder.Entity("Internshala.Domain.Entities.Experience", b =>
@@ -863,251 +1074,251 @@ namespace Internshala.Infrastructure.Persistence.Migrations
                         {
                             Id = 1,
                             CityName = "Bangalore",
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3909),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6563),
                             IsActive = true,
                             IsDeleted = false,
                             State = "Karnataka",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3909)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6563)
                         },
                         new
                         {
                             Id = 2,
                             CityName = "Mumbai",
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3914),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6564),
                             IsActive = true,
                             IsDeleted = false,
                             State = "Maharashtra",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3914)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6565)
                         },
                         new
                         {
                             Id = 3,
                             CityName = "Delhi",
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3916),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6565),
                             IsActive = true,
                             IsDeleted = false,
                             State = "Delhi",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3916)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6566)
                         },
                         new
                         {
                             Id = 4,
                             CityName = "Hyderabad",
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3918),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6566),
                             IsActive = true,
                             IsDeleted = false,
                             State = "Telangana",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3918)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6566)
                         },
                         new
                         {
                             Id = 5,
                             CityName = "Chennai",
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3919),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6567),
                             IsActive = true,
                             IsDeleted = false,
                             State = "Tamil Nadu",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3920)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6567)
                         },
                         new
                         {
                             Id = 6,
                             CityName = "Pune",
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3921),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6568),
                             IsActive = true,
                             IsDeleted = false,
                             State = "Maharashtra",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3921)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6568)
                         },
                         new
                         {
                             Id = 7,
                             CityName = "Kolkata",
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3923),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6569),
                             IsActive = true,
                             IsDeleted = false,
                             State = "West Bengal",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3923)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6569)
                         },
                         new
                         {
                             Id = 8,
                             CityName = "Ahmedabad",
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3926),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6569),
                             IsActive = true,
                             IsDeleted = false,
                             State = "Gujarat",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3927)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6570)
                         },
                         new
                         {
                             Id = 9,
                             CityName = "Jaipur",
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3928),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6570),
                             IsActive = true,
                             IsDeleted = false,
                             State = "Rajasthan",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3928)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6570)
                         },
                         new
                         {
                             Id = 10,
                             CityName = "Lucknow",
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3929),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6571),
                             IsActive = true,
                             IsDeleted = false,
                             State = "Uttar Pradesh",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3930)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6571)
                         },
                         new
                         {
                             Id = 11,
                             CityName = "Noida",
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3931),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6572),
                             IsActive = true,
                             IsDeleted = false,
                             State = "Uttar Pradesh",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3931)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6572)
                         },
                         new
                         {
                             Id = 12,
                             CityName = "Gurgaon",
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3933),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6573),
                             IsActive = true,
                             IsDeleted = false,
                             State = "Haryana",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3933)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6573)
                         },
                         new
                         {
                             Id = 13,
                             CityName = "Kochi",
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3934),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6573),
                             IsActive = true,
                             IsDeleted = false,
                             State = "Kerala",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3935)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6573)
                         },
                         new
                         {
                             Id = 14,
                             CityName = "Bhubaneswar",
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3936),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6574),
                             IsActive = true,
                             IsDeleted = false,
                             State = "Odisha",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3936)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6574)
                         },
                         new
                         {
                             Id = 15,
                             CityName = "Coimbatore",
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3937),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6575),
                             IsActive = true,
                             IsDeleted = false,
                             State = "Tamil Nadu",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3938)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6575)
                         },
                         new
                         {
                             Id = 16,
                             CityName = "Indore",
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3939),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6576),
                             IsActive = true,
                             IsDeleted = false,
                             State = "Madhya Pradesh",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3939)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6576)
                         },
                         new
                         {
                             Id = 17,
                             CityName = "Chandigarh",
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3941),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6576),
                             IsActive = true,
                             IsDeleted = false,
                             State = "Punjab",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3941)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6577)
                         },
                         new
                         {
                             Id = 18,
                             CityName = "Nagpur",
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3942),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6577),
                             IsActive = true,
                             IsDeleted = false,
                             State = "Maharashtra",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3942)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6577)
                         },
                         new
                         {
                             Id = 19,
                             CityName = "Visakhapatnam",
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3944),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6578),
                             IsActive = true,
                             IsDeleted = false,
                             State = "Andhra Pradesh",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3944)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6578)
                         },
                         new
                         {
                             Id = 20,
                             CityName = "Surat",
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3945),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6579),
                             IsActive = true,
                             IsDeleted = false,
                             State = "Gujarat",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(3945)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6579)
                         },
                         new
                         {
                             Id = 21,
                             CityName = "Mysore",
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4009),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6603),
                             IsActive = true,
                             IsDeleted = false,
                             State = "Karnataka",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4010)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6603)
                         },
                         new
                         {
                             Id = 22,
                             CityName = "Thiruvananthapuram",
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4011),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6604),
                             IsActive = true,
                             IsDeleted = false,
                             State = "Kerala",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4012)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6604)
                         },
                         new
                         {
                             Id = 23,
                             CityName = "Patna",
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4013),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6604),
                             IsActive = true,
                             IsDeleted = false,
                             State = "Bihar",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4014)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6604)
                         },
                         new
                         {
                             Id = 24,
                             CityName = "Bhopal",
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4015),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6605),
                             IsActive = true,
                             IsDeleted = false,
                             State = "Madhya Pradesh",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4015)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6605)
                         },
                         new
                         {
                             Id = 25,
                             CityName = "Vadodara",
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4017),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6606),
                             IsActive = true,
                             IsDeleted = false,
                             State = "Gujarat",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4017)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6606)
                         });
                 });
 
@@ -1311,252 +1522,252 @@ namespace Internshala.Infrastructure.Persistence.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4149),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6634),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Python",
                             Slug = "python",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4149)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6634)
                         },
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4154),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6637),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "JavaScript",
                             Slug = "javascript",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4154)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6637)
                         },
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4156),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6638),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "React",
                             Slug = "react",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4157)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6638)
                         },
                         new
                         {
                             Id = 4,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4158),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6639),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Angular",
                             Slug = "angular",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4159)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6639)
                         },
                         new
                         {
                             Id = 5,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4160),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6640),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Node.js",
                             Slug = "nodejs",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4161)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6640)
                         },
                         new
                         {
                             Id = 6,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4162),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6641),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Java",
                             Slug = "java",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4163)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6641)
                         },
                         new
                         {
                             Id = 7,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4164),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6642),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "C#",
                             Slug = "csharp",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4165)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6642)
                         },
                         new
                         {
                             Id = 8,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4166),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6643),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "SQL",
                             Slug = "sql",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4167)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6643)
                         },
                         new
                         {
                             Id = 9,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4168),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6644),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Machine Learning",
                             Slug = "machine-learning",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4169)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6644)
                         },
                         new
                         {
                             Id = 10,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4170),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6645),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Data Analysis",
                             Slug = "data-analysis",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4171)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6645)
                         },
                         new
                         {
                             Id = 11,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4172),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6645),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Digital Marketing",
                             Slug = "digital-marketing",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4173)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6646)
                         },
                         new
                         {
                             Id = 12,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4174),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6646),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "SEO",
                             Slug = "seo",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4175)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6647)
                         },
                         new
                         {
                             Id = 13,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4176),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6647),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Content Writing",
                             Slug = "content-writing",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4177)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6648)
                         },
                         new
                         {
                             Id = 14,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4178),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6648),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Graphic Design",
                             Slug = "graphic-design",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4179)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6648)
                         },
                         new
                         {
                             Id = 15,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4180),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6649),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Figma",
                             Slug = "figma",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4181)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6649)
                         },
                         new
                         {
                             Id = 16,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4182),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6650),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Excel",
                             Slug = "excel",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4183)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6650)
                         },
                         new
                         {
                             Id = 17,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4185),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6651),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Communication",
                             Slug = "communication",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4185)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6651)
                         },
                         new
                         {
                             Id = 18,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4186),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6652),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Leadership",
                             Slug = "leadership",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4187)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6652)
                         },
                         new
                         {
                             Id = 19,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4188),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6653),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Canva",
                             Slug = "canva",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4189)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6653)
                         },
                         new
                         {
                             Id = 20,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4190),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6654),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "AWS",
                             Slug = "aws",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4191)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6654)
                         },
                         new
                         {
                             Id = 21,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4192),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6655),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Docker",
                             Slug = "docker",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4193)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6655)
                         },
                         new
                         {
                             Id = 22,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4194),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6656),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Git",
                             Slug = "git",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4195)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6656)
                         },
                         new
                         {
                             Id = 23,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4196),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6657),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Flutter",
                             Slug = "flutter",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4197)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6657)
                         },
                         new
                         {
                             Id = 24,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4198),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6658),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "React Native",
                             Slug = "react-native",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4198)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6658)
                         },
                         new
                         {
                             Id = 25,
-                            CreatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4200),
+                            CreatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6658),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "PowerBI",
                             Slug = "powerbi",
-                            UpdatedAt = new DateTime(2026, 5, 30, 6, 20, 22, 186, DateTimeKind.Utc).AddTicks(4200)
+                            UpdatedAt = new DateTime(2026, 6, 3, 10, 58, 33, 209, DateTimeKind.Utc).AddTicks(6659)
                         });
                 });
 
@@ -1799,6 +2010,28 @@ namespace Internshala.Infrastructure.Persistence.Migrations
                     b.Navigation("Application");
                 });
 
+            modelBuilder.Entity("Internshala.Domain.Entities.Course", b =>
+                {
+                    b.HasOne("Internshala.Domain.Entities.Category", "Category")
+                        .WithMany()
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("Internshala.Domain.Entities.CourseModule", b =>
+                {
+                    b.HasOne("Internshala.Domain.Entities.Course", "Course")
+                        .WithMany("Modules")
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+                });
+
             modelBuilder.Entity("Internshala.Domain.Entities.Education", b =>
                 {
                     b.HasOne("Internshala.Domain.Entities.Student", "Student")
@@ -1827,6 +2060,25 @@ namespace Internshala.Infrastructure.Persistence.Migrations
                     b.Navigation("Industry");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Internshala.Domain.Entities.Enrollment", b =>
+                {
+                    b.HasOne("Internshala.Domain.Entities.Course", "Course")
+                        .WithMany("Enrollments")
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Internshala.Domain.Entities.Student", "Student")
+                        .WithMany()
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+
+                    b.Navigation("Student");
                 });
 
             modelBuilder.Entity("Internshala.Domain.Entities.Experience", b =>
@@ -1969,6 +2221,13 @@ namespace Internshala.Infrastructure.Persistence.Migrations
             modelBuilder.Entity("Internshala.Domain.Entities.Application", b =>
                 {
                     b.Navigation("StatusHistory");
+                });
+
+            modelBuilder.Entity("Internshala.Domain.Entities.Course", b =>
+                {
+                    b.Navigation("Enrollments");
+
+                    b.Navigation("Modules");
                 });
 
             modelBuilder.Entity("Internshala.Domain.Entities.Employer", b =>

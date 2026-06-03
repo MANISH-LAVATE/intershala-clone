@@ -36,8 +36,10 @@ public static class DependencyInjection
         services.AddSignalR();
         services.AddScoped<INotificationHubService, NotificationHubService>();
 
-        var jwtSettings = configuration.GetSection("Jwt").Get<JwtSettings>()
-            ?? throw new InvalidOperationException("JWT settings are not configured.");
+        var jwtSettings = new JwtSettings();
+        configuration.GetSection("Jwt").Bind(jwtSettings);
+        if (string.IsNullOrWhiteSpace(jwtSettings.SecretKey))
+            throw new InvalidOperationException("JWT settings are not configured. Ensure 'Jwt:SecretKey' is set.");
 
         services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             .AddJwtBearer(options =>

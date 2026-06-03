@@ -10,3 +10,15 @@ G:\Intershala-clone\backend\Internshala.Domain\obj\Debug\net8.0\Internshala.Doma
 G:\Intershala-clone\backend\Internshala.Domain\obj\Debug\net8.0\refint\Internshala.Domain.dll
 G:\Intershala-clone\backend\Internshala.Domain\obj\Debug\net8.0\Internshala.Domain.pdb
 G:\Intershala-clone\backend\Internshala.Domain\obj\Debug\net8.0\ref\Internshala.Domain.dll
+D:\Intershala-clone\backend\Internshala.Domain\bin\Debug\net8.0\Internshala.Domain.deps.json
+D:\Intershala-clone\backend\Internshala.Domain\bin\Debug\net8.0\Internshala.Domain.dll
+D:\Intershala-clone\backend\Internshala.Domain\bin\Debug\net8.0\Internshala.Domain.pdb
+D:\Intershala-clone\backend\Internshala.Domain\obj\Debug\net8.0\Internshala.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Intershala-clone\backend\Internshala.Domain\obj\Debug\net8.0\Internshala.Domain.AssemblyInfoInputs.cache
+D:\Intershala-clone\backend\Internshala.Domain\obj\Debug\net8.0\Internshala.Domain.AssemblyInfo.cs
+D:\Intershala-clone\backend\Internshala.Domain\obj\Debug\net8.0\Internshala.Domain.csproj.CoreCompileInputs.cache
+D:\Intershala-clone\backend\Internshala.Domain\obj\Debug\net8.0\Internshala.Domain.sourcelink.json
+D:\Intershala-clone\backend\Internshala.Domain\obj\Debug\net8.0\Internshala.Domain.dll
+D:\Intershala-clone\backend\Internshala.Domain\obj\Debug\net8.0\refint\Internshala.Domain.dll
+D:\Intershala-clone\backend\Internshala.Domain\obj\Debug\net8.0\Internshala.Domain.pdb
+D:\Intershala-clone\backend\Internshala.Domain\obj\Debug\net8.0\ref\Internshala.Domain.dll

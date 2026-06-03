@@ -79,7 +79,6 @@
       "Microsoft.EntityFrameworkCore/8.0.14": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Abstractions": "8.0.14",
-          "Microsoft.EntityFrameworkCore.Analyzers": "8.0.14",
           "Microsoft.Extensions.Caching.Memory": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1"
         },
@@ -98,7 +97,6 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/8.0.14": {},
       "Microsoft.Extensions.Caching.Abstractions/8.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "10.0.0"
@@ -241,12 +239,18 @@
       },
       "Internshala.Domain/1.0.0": {
         "runtime": {
-          "Internshala.Domain.dll": {}
+          "Internshala.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Internshala.Shared/1.0.0": {
         "runtime": {
-          "Internshala.Shared.dll": {}
+          "Internshala.Shared.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
@@ -305,13 +309,6 @@
       "sha512": "sha512-Om8/jdWyx9eKFkA1YEgxk13KjGIzA8teLgG7iNFunsI2+MT6UT54Eb4t6oe4NQlIaACj5voUe6szVAQe9GKwDA==",
       "path": "microsoft.entityframeworkcore.abstractions/8.0.14",
       "hashPath": "microsoft.entityframeworkcore.abstractions.8.0.14.nupkg.sha512"
-    },
-    "Microsoft.EntityFrameworkCore.Analyzers/8.0.14": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-lzNb3s4t5JDMHGoUFuX/f977dFythvmzGFJxvjlhExdiATPKQfquo2NM0uX8Kelfq04jRljpdbRzcsSsK1q9Tw==",
-      "path": "microsoft.entityframeworkcore.analyzers/8.0.14",
-      "hashPath": "microsoft.entityframeworkcore.analyzers.8.0.14.nupkg.sha512"
     },
     "Microsoft.Extensions.Caching.Abstractions/8.0.0": {
       "type": "package",

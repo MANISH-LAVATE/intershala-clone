@@ -16,11 +16,19 @@ public sealed class MarkAllNotificationsReadCommandHandler(
     {
         var userId = currentUser.UserId ?? throw new UnauthorizedException();
 
-        await db.Notifications
+        var unread = await db.Notifications
             .Where(n => n.UserId == userId && !n.IsRead)
-            .ExecuteUpdateAsync(s => s
-                .SetProperty(n => n.IsRead, true)
-                .SetProperty(n => n.ReadAt, DateTime.UtcNow),
-            cancellationToken);
+            .ToListAsync(cancellationToken);
+
+        if (unread.Count == 0) return;
+
+        var now = DateTime.UtcNow;
+        foreach (var notification in unread)
+        {
+            notification.IsRead = true;
+            notification.ReadAt = now;
+        }
+
+        await db.SaveChangesAsync(cancellationToken);
     }
 }

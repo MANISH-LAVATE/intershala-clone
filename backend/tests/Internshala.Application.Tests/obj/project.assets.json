@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net8.0": {
       "AutoMapper/16.1.1": {
@@ -6611,23 +6611,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\manish.lavate\\.nuget\\packages\\": {},
+    "C:\\Users\\ADMIN\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Intershala-clone\\backend\\tests\\Internshala.Application.Tests\\Internshala.Application.Tests.csproj",
+      "projectUniqueName": "D:\\intershala-clone\\backend\\tests\\Internshala.Application.Tests\\Internshala.Application.Tests.csproj",
       "projectName": "Internshala.Application.Tests",
-      "projectPath": "G:\\Intershala-clone\\backend\\tests\\Internshala.Application.Tests\\Internshala.Application.Tests.csproj",
-      "packagesPath": "C:\\Users\\manish.lavate\\.nuget\\packages\\",
-      "outputPath": "G:\\Intershala-clone\\backend\\tests\\Internshala.Application.Tests\\obj\\",
+      "projectPath": "D:\\intershala-clone\\backend\\tests\\Internshala.Application.Tests\\Internshala.Application.Tests.csproj",
+      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+      "outputPath": "D:\\intershala-clone\\backend\\tests\\Internshala.Application.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\manish.lavate\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6636,20 +6636,22 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "projectReferences": {
-            "G:\\Intershala-clone\\backend\\Internshala.Application\\Internshala.Application.csproj": {
-              "projectPath": "G:\\Intershala-clone\\backend\\Internshala.Application\\Internshala.Application.csproj"
+            "D:\\intershala-clone\\backend\\Internshala.Application\\Internshala.Application.csproj": {
+              "projectPath": "D:\\intershala-clone\\backend\\Internshala.Application\\Internshala.Application.csproj"
             },
-            "G:\\Intershala-clone\\backend\\Internshala.Domain\\Internshala.Domain.csproj": {
-              "projectPath": "G:\\Intershala-clone\\backend\\Internshala.Domain\\Internshala.Domain.csproj"
+            "D:\\intershala-clone\\backend\\Internshala.Domain\\Internshala.Domain.csproj": {
+              "projectPath": "D:\\intershala-clone\\backend\\Internshala.Domain\\Internshala.Domain.csproj"
             },
-            "G:\\Intershala-clone\\backend\\Internshala.Shared\\Internshala.Shared.csproj": {
-              "projectPath": "G:\\Intershala-clone\\backend\\Internshala.Shared\\Internshala.Shared.csproj"
+            "D:\\intershala-clone\\backend\\Internshala.Shared\\Internshala.Shared.csproj": {
+              "projectPath": "D:\\intershala-clone\\backend\\Internshala.Shared\\Internshala.Shared.csproj"
             }
           }
         }
@@ -6663,10 +6665,12 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net8.0": {
+        "framework": "net8.0",
         "targetAlias": "net8.0",
         "dependencies": {
           "FluentAssertions": {
@@ -6710,7 +6714,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -4,7 +4,9 @@
       "PowerShell(Get-ChildItem \"g:\\\\Intershala-clone\" -ErrorAction SilentlyContinue; if \\(-not \\(Test-Path \"g:\\\\Intershala-clone\"\\)\\) { Write-Output \"Directory does not exist\" } else { Write-Output \"Directory exists\" })",
       "PowerShell(cd \"g:\\\\Intershala-clone\\\\backend\"; dotnet build Internshala.sln -c Release --nologo -v quiet 2>&1 | Where-Object { $_ -match \"error|warning|Error|Warning\" } | Select-Object -First 30)",
       "PowerShell(cd \"g:\\\\Intershala-clone\\\\backend\"; dotnet build Internshala.sln -c Release --nologo -v quiet 2>&1 | Where-Object { $_ -match \" error \" } | Select-Object -First 20)",
-      "Bash(git -C \"d:/Intershala-clone\" log --oneline)"
+      "Bash(git -C \"d:/Intershala-clone\" log --oneline)",
+      "PowerShell(sqllocaldb info 2>&1)",
+      "PowerShell(sqlcmd -S \"\\(localdb\\)\\\\MSSQLLocalDB\" -Q \"SELECT @@VERSION\" 2>&1)"
     ]
   }
 }

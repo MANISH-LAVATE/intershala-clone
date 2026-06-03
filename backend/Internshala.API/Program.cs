@@ -2,6 +2,7 @@ using Internshala.API.Middleware;
 using Internshala.Application;
 using Internshala.Infrastructure;
 using Internshala.Infrastructure.Hubs;
+using Internshala.Infrastructure.Persistence.Seeders;
 using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.OpenApi.Models;
 using Serilog;
@@ -13,7 +14,13 @@ Log.Logger = new LoggerConfiguration()
 
 try
 {
-    var builder = WebApplication.CreateBuilder(args);
+    var builder = WebApplication.CreateBuilder(new WebApplicationOptions
+    {
+        Args = args,
+        // Ensure config files are always loaded from the executable's directory,
+        // regardless of the working directory used to launch the process.
+        ContentRootPath = AppContext.BaseDirectory
+    });
 
     builder.Host.UseSerilog((ctx, services, config) =>
         config.ReadFrom.Configuration(ctx.Configuration)
@@ -70,19 +77,24 @@ try
 
     builder.Services.AddCors(options =>
     {
-        options.AddPolicy("AllowAngularDev", policy =>
-            policy.WithOrigins(
-                    "http://localhost:4200",
-                    builder.Configuration["AllowedOrigins"] ?? "http://localhost:4200")
+        options.AddPolicy("AllowAll", policy =>
+            policy.AllowAnyOrigin()
                   .AllowAnyHeader()
-                  .AllowAnyMethod()
-                  .AllowCredentials());
+                  .AllowAnyMethod());
     });
 
     builder.Services.AddHealthChecks()
         .AddSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")!);
 
     var app = builder.Build();
+
+    // Seed sample data in Development (no-op if data already exists)
+    if (app.Environment.IsDevelopment())
+    {
+        var seedLogger = app.Services.GetRequiredService<ILoggerFactory>()
+            .CreateLogger("SampleDataSeeder");
+        await SampleDataSeeder.SeedAsync(app.Services, seedLogger);
+    }
 
     app.UseMiddleware<CorrelationIdMiddleware>();
     app.UseMiddleware<ExceptionHandlingMiddleware>();
@@ -95,7 +107,7 @@ try
     }
 
     app.UseSerilogRequestLogging();
-    app.UseCors("AllowAngularDev");
+    app.UseCors("AllowAll");
     app.UseHttpsRedirection();
     app.UseOutputCache();
     app.UseRateLimiter();
