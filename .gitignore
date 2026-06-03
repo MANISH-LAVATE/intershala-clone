@@ -7,3 +7,8 @@ backend/Internshala.API/bin/Release/net8.0/Internshala.Infrastructure.dll
 backend/Internshala.API/bin/Release/net8.0/Internshala.Shared.dll
 backend/Internshala.API/obj/Debug/net8.0/rpswa.dswa.cache.json
 backend/Internshala.API/obj/Debug/net8.0/staticwebassets.removed.txt
+backend/Internshala.API/bin/Release/net8.0/Internshala.API.dll
+backend/Internshala.API/bin/Release/net8.0/Internshala.Application.dll
+backend/Internshala.API/bin/Release/net8.0/Internshala.Domain.dll
+backend/Internshala.API/bin/Release/net8.0/Internshala.Infrastructure.dll
+backend/Internshala.API/bin/Release/net8.0/Internshala.Shared.dll
